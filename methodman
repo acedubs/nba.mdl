@@ -1,0 +1,9 @@
+function createMethod(type) {
+  return function() {}
+}
+var Component = React.createClass({
+  method: createMethod('tag')
+});
+The result is the code mod completely dropping the method
+
+class Component extends React.Component {}
